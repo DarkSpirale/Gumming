@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c74f8730100bf47af2c9c723e97b64, type: 3}
+  m_Name: DigData
+  m_EditorClassIdentifier: 
+  abilityName: 2
+  description: 
+  icon: {fileID: 1205891363548157439, guid: e488490c93dcab444954111e8a2ec243, type: 3}
+  canBeCancelled: 1
+  diggingSpeed: 5
+  diggingTime: 20
+  typeOfShape: 0
+  diggingShape: {fileID: 1205891363548157439, guid: e488490c93dcab444954111e8a2ec243, type: 3}
+  diggingSize: 20
+  intervalBetweenDigSteps: 0.05
+  diggingPosOffset: 0.025

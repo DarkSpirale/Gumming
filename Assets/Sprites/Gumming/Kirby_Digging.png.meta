@@ -1,0 +1,483 @@
+fileFormatVersion: 2
+guid: e488490c93dcab444954111e8a2ec243
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2334952638851667312
+    second: Kirby_Digging_0
+  - first:
+      213: 581259049074787667
+    second: Kirby_Digging_1
+  - first:
+      213: -5499716536644080512
+    second: Kirby_Digging_2
+  - first:
+      213: 4453728880728468334
+    second: Kirby_Digging_3
+  - first:
+      213: 1205891363548157439
+    second: Kirby_Digging_4
+  - first:
+      213: -8376018977104993757
+    second: Kirby_Digging_5
+  - first:
+      213: -2089569341568791881
+    second: Kirby_Digging_6
+  - first:
+      213: -3213851577859075065
+    second: Kirby_Digging_7
+  - first:
+      213: -6903146935883978998
+    second: Kirby_Digging_8
+  - first:
+      213: -1155294842327675132
+    second: Kirby_Digging_9
+  - first:
+      213: 4142160265429979529
+    second: Kirby_Digging_10
+  - first:
+      213: -6820882452474273959
+    second: Kirby_Digging_11
+  - first:
+      213: 8469728964846965257
+    second: Kirby_Digging_12
+  - first:
+      213: 5260711390782983882
+    second: Kirby_Digging_13
+  - first:
+      213: -7314633282123237291
+    second: Kirby_Digging_14
+  - first:
+      213: -3518708526443814096
+    second: Kirby_Digging_15
+  - first:
+      213: 7277417577659087021
+    second: Kirby_Digging_16
+  - first:
+      213: -7544663681119139042
+    second: Kirby_Digging_17
+  - first:
+      213: -6644591640939622782
+    second: Kirby_Digging_18
+  - first:
+      213: 5390001447771480854
+    second: Kirby_Digging_19
+  - first:
+      213: 6172006111006314586
+    second: Kirby_Digging_20
+  - first:
+      213: 3897439130159340991
+    second: Kirby_Digging_21
+  - first:
+      213: 7984085542497525667
+    second: Kirby_Digging_22
+  - first:
+      213: 5127268110604896833
+    second: Kirby_Digging_23
+  - first:
+      213: -3715985826640646696
+    second: Kirby_Digging_24
+  - first:
+      213: 8111089024431995472
+    second: Kirby_Digging_25
+  - first:
+      213: 7535418552820310466
+    second: Kirby_Digging_26
+  - first:
+      213: -801510453363422535
+    second: Kirby_Digging_27
+  - first:
+      213: 7379919716627473225
+    second: Kirby_Digging_28
+  - first:
+      213: 7261885771466248355
+    second: Kirby_Digging_29
+  - first:
+      213: -3370631958931864305
+    second: Kirby_Digging_30
+  - first:
+      213: 8580621586500194321
+    second: Kirby_Digging_31
+  - first:
+      213: 2943325812920428208
+    second: Kirby_Digging_32
+  - first:
+      213: -3679430135417710849
+    second: Kirby_Digging_33
+  - first:
+      213: -2526793833458449143
+    second: Kirby_Digging_34
+  - first:
+      213: -2108405728108845437
+    second: Kirby_Digging_35
+  - first:
+      213: 6061483008552007767
+    second: Kirby_Digging_36
+  - first:
+      213: 945542103488961723
+    second: Kirby_Digging_37
+  - first:
+      213: 1151871914873219181
+    second: Kirby_Digging_38
+  - first:
+      213: -8878665156678112551
+    second: Kirby_Digging_39
+  - first:
+      213: 2708780278437143444
+    second: Kirby_Digging_40
+  - first:
+      213: 8960459454001112834
+    second: Kirby_Digging_41
+  - first:
+      213: 1834692197612127944
+    second: Kirby_Digging_42
+  - first:
+      213: -8383761459637364749
+    second: Kirby_Digging_43
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kirby_Digging_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0755d1ecd0b676020800000000000000
+      internalID: 2334952638851667312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Digging_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3558596860c011800800000000000000
+      internalID: 581259049074787667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Digging_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cecfbd2f41da3b0800000000000000
+      internalID: -5499716536644080512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Digging_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6be7b5f1d2decd30800000000000000
+      internalID: 4453728880728468334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Digging_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5dff95ecf2cb010800000000000000
+      internalID: 1205891363548157439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Digging_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322e9bd4e1762cb80800000000000000
+      internalID: -8376018977104993757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Digging_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bace3e31cb5003e0800000000000000
+      internalID: -2089569341568791881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Digging_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70491e4840b1663d0800000000000000
+      internalID: -3213851577859075065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Digging_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a072f4eaf681330a0800000000000000
+      internalID: -6903146935883978998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Digging_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fc730467197ffe0800000000000000
+      internalID: -1155294842327675132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Digging_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98111b7b0d8eb7930800000000000000
+      internalID: 4142160265429979529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
