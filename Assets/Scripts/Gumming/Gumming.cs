@@ -150,12 +150,10 @@ public class Gumming : MonoBehaviour
     {
         int nbHits = col.Cast(Vector2.down, hits, Data.groundCheckDistance, true);
 
-        if(nbHits > 0)
+        for (int i = 0; i < nbHits; i++)
         {
-            foreach (RaycastHit2D hit in hits)
-            {
-                if (hit.collider.gameObject.layer == LayerMask.NameToLayer("World")) return true;
-            }
+            if (LayerCheck.IsLayerWorld(hits[i].collider.gameObject.layer)) 
+                return true;
         }
         return false;
     }

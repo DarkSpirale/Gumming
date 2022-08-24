@@ -1,7 +1,6 @@
 ﻿using UnityEditor;
-using UnityEditor.UIElements;
-using UnityEngine.UIElements;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace DTerrain
 {
@@ -77,12 +76,12 @@ namespace DTerrain
         {
             CheckIfNewShapeProperties();
 
-            if (Input.GetMouseButton(0) && enableDestroying)
+            if(Input.GetMouseButtonDown(0) && enableDestroying)
             {
                 OnLeftMouseButtonClick();
             }
 
-            if(Input.GetMouseButton(1) && enableBuilding)
+            if(Input.GetMouseButtonDown(1) && enableBuilding)
             {
                 OnRightMouseButtonClick();
             }
@@ -183,9 +182,8 @@ namespace DTerrain
             }
         }
 
-        protected virtual void OnLeftMouseButtonClick()
+        public void OnLeftMouseButtonClick()
         {
-
             Vector3 p = Camera.main.ScreenToWorldPoint(Input.mousePosition) - primaryLayer.transform.position;
             if(outlineSizeToUse > 0)
             {
@@ -198,13 +196,11 @@ namespace DTerrain
 
         }
 
-        protected virtual void OnRightMouseButtonClick()
+        public void OnRightMouseButtonClick()
         {
             Vector3 p = Camera.main.ScreenToWorldPoint(Input.mousePosition) - primaryLayer.transform.position;
             WorldManager.instance.BuildShape(shapeToBuild, p, textureToUse);
         }
-
-        
     }
 
 

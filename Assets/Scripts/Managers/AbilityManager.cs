@@ -10,7 +10,6 @@ public class AbilityManager : MonoBehaviour
     public Gumming CurrentGumming { get; private set; }
     public Ability CurrentAbility { get; private set; }
 
-    [SerializeField] [Range(0, 2)] private float timeMultiplier = 1.0f;
     [SerializeField] private GameObject abilityPanel;
     [SerializeField] private Transform abilitySlotsParents;
     [SerializeField] private GameObject abilitySlotPrefab;
@@ -30,11 +29,6 @@ public class AbilityManager : MonoBehaviour
     private void Start()
     {
         RefreshContent();
-    }
-
-    private void Update()
-    {
-        Time.timeScale = timeMultiplier;
     }
 
     public void UseAbility()

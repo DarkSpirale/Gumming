@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &532047783447391587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3108306231360049795}
+  m_Layer: 0
+  m_Name: Checks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3108306231360049795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532047783447391587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3421846453258660989}
+  - {fileID: 474310416153169373}
+  - {fileID: 982203211296599979}
+  m_Father: {fileID: 7047756104709027140}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &961746116006371768
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 982203211296599979}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: CeilingCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,10 +57,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961746116006371768}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07999992, y: -0.08, z: 0}
+  m_LocalPosition: {x: 0.07999992, y: -0.08000183, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7047756104709027140}
+  m_Father: {fileID: 3108306231360049795}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1378113324121481115
@@ -39,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474310416153169373}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: WallChecks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,13 +86,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378113324121481115}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2171758696004314268}
   - {fileID: 1956184466856640762}
-  m_Father: {fileID: 7047756104709027140}
+  m_Father: {fileID: 3108306231360049795}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1476076351358984690
@@ -71,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1956184466856640762}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: WallCheckBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3421846453258660989}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GroundChecks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,14 +148,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2180218688619644792}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1195229801940388097}
   - {fileID: 7828102626936648548}
   - {fileID: 4452009472107399210}
-  m_Father: {fileID: 7047756104709027140}
+  m_Father: {fileID: 3108306231360049795}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2835463013089875211
@@ -134,7 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7828102626936648548}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GroundCheckMiddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1195229801940388097}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GroundCheckBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2171758696004314268}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: WallCheckTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,9 +282,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3421846453258660989}
-  - {fileID: 474310416153169373}
-  - {fileID: 982203211296599979}
+  - {fileID: 3108306231360049795}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -426,7 +457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4452009472107399210}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GroundCheckFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}

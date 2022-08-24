@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using DTerrain;
 
-public class SpinDrillState : State
+public class SpinDrillState : AbilityState<SO_SpinDrillData>
 {
-    protected SO_SpinDrillData abilityData;
-
     private Shape drillingShape;
 
     private float startPosX;

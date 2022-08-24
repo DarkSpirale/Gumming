@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using DTerrain;
 
-public class DigState : State
+public class DigState : AbilityState<SO_DigData>
 {
-    protected SO_DigData abilityData;
-
     private Shape diggingShape;
+
+    private Vector2 workspace;
 
     private float digStepStartTime;
 
@@ -29,9 +29,6 @@ public class DigState : State
     {
         base.Enter();
 
-        gumming.SetCurrentAbility(abilityData.abilityName);
-        IsSelectable = abilityData.canBeCancelled;
-
         gumming.SetVelocityX(0f);
         gumming.SetRigidbodyType(RigidbodyType2D.Static);
 
@@ -44,8 +41,6 @@ public class DigState : State
         base.Exit();
 
         gumming.SetRigidbodyType(RigidbodyType2D.Dynamic);
-
-        gumming.SetCurrentAbility(Abilities.None);
     }
 
     public override void LogicUpdate()
@@ -81,10 +76,11 @@ public class DigState : State
     {
         digStepStartTime = Time.time;
 
-        Vector2 diggingPos = new Vector2(gumming.transform.position.x, gumming.transform.position.y - abilityData.diggingPosOffset);
-        WorldManager.instance.DestroyShape(diggingShape, diggingPos);
+        workspace.Set(gumming.transform.position.x, gumming.transform.position.y - abilityData.diggingPosOffset);
+        WorldManager.instance.DestroyShape(diggingShape, workspace);
 
-        gumming.SetPosition(diggingPos);
+        workspace.Set(gumming.transform.position.x, gumming.transform.position.y - abilityData.posShiftBetweenDigSteps);
+        gumming.SetPosition(workspace);
     }
 
     private void GenerateDiggingShape()
@@ -97,7 +93,7 @@ public class DigState : State
                 diggingShape = Shape.GenerateShapeCircle(diggingSize);
                 break;
             case ShapeName.rectangle:
-                diggingShape = Shape.GenerateShapeRect(diggingSize, diggingSize);
+                diggingShape = Shape.GenerateShapeRect(diggingSize, abilityData.diggingSize2);
                 break;
             case ShapeName.texture:
                 diggingShape = Shape.GenerateShapeFromSprite(abilityData.diggingShape);

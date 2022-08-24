@@ -11,7 +11,9 @@ public class SO_DigData : SO_AbilityData
     public ShapeName typeOfShape = ShapeName.rectangle;
     public Sprite diggingShape;
     public int diggingSize;
+    public int diggingSize2;
     public float intervalBetweenDigSteps = 0.2f;
     public float diggingPosOffset = 0.5f;
+    public float posShiftBetweenDigSteps = 0.03125f;
 
 }

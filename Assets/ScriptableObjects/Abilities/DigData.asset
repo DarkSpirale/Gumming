@@ -21,5 +21,7 @@ MonoBehaviour:
   typeOfShape: 0
   diggingShape: {fileID: 1205891363548157439, guid: e488490c93dcab444954111e8a2ec243, type: 3}
   diggingSize: 20
+  diggingSize2: 5
   intervalBetweenDigSteps: 0.05
-  diggingPosOffset: 0.025
+  diggingPosOffset: 0.35
+  posShiftBetweenDigSteps: 0.015

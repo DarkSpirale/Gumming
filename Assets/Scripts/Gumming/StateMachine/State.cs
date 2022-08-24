@@ -27,9 +27,9 @@ public class State
     public virtual void Enter()
     {
         isExitingState = false;
-        DoChecks();
         gumming.Animator.SetBool(animBoolName, true);
         startTime = Time.time;
+        DoChecks();
     }
 
     public virtual void Exit()
