@@ -13,7 +13,7 @@ public class SaveLevel : MonoBehaviour
 
     public List<Transform> props = new List<Transform>();
 
-    private List<PropsData> propsDataList = new List<PropsData>();
+    private SerializableDataToSave serializedDatas = new SerializableDataToSave();
 
     private void Start()
     {
@@ -54,45 +54,32 @@ public class SaveLevel : MonoBehaviour
 
     private void SaveToJson()
     {
-        //propsDataList = ConvertGOListToPropsDataList(props);
-        propsDataList = ConvertGOListToEditorDataList<PropsData>(props);
+        serializedDatas.propsDataList = ConvertGOListToEditorDataList<PropsData>(props);
 
-        var propsJS = new System.Text.StringBuilder();
+        var stringJS = JsonUtility.ToJson(serializedDatas);
+
+        /*var propsJS = new System.Text.StringBuilder();
 
         foreach(PropsData prop in propsDataList)
         {
             propsJS.AppendLine(JsonUtility.ToJson(prop));
-        }
-
-        var propsJS2 = JsonUtility.ToJson(propsDataList[0]);
+        }*/
 
         string filePath = Application.persistentDataPath + "/" + levelName + ".json";
         Debug.Log(filePath);
 
-        System.IO.File.WriteAllText(filePath, propsJS2);
+        System.IO.File.WriteAllText(filePath, stringJS);
     }
 
-    private List<PropsData> ConvertGOListToPropsDataList(List<Transform> listGO)
-    {
-        List<PropsData> targetList = new List<PropsData>();
-
-        foreach(Transform go in listGO)
-        {
-            targetList.Add(PropsData.ConvertGOToEditorData(go));
-        }
-
-        return targetList;
-    }
-
-    
     private List<T> ConvertGOListToEditorDataList<T>(List<Transform> inputList) where T: EditorData
     {
         List<T> targetList = new List<T>();
 
         foreach (Transform go in inputList)
         {
-            T targetObject = typeof(T).GetMethod("ConvertGOToEditorData").Invoke(null, new object[] { go }) as T;
-            targetList.Add(targetObject);
+            //T targetObject = typeof(T).GetMethod("ConvertGOToEditorData").Invoke(null, new object[] { go }) as T;
+            //targetList.Add(targetObject);
+            targetList.Add(EditorData.ConvertGOToEditorData<T>(go));
         }
 
         return targetList;
@@ -100,5 +87,10 @@ public class SaveLevel : MonoBehaviour
     
 }
 
+[System.Serializable]
+public struct SerializableDataToSave
+{
+    public List<PropsData> propsDataList;
+}
 
 

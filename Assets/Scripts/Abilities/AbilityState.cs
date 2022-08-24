@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AbilityState<T> : State where T : SO_AbilityData
+public abstract class AbilityState<T> : State where T : SO_AbilityData
 {
     protected T abilityData;
 

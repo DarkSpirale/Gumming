@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class State
+public abstract class State
 {
     public bool IsSelectable { get; protected set; }
 
