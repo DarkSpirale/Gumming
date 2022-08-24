@@ -11,7 +11,9 @@ public class SaveLevel : MonoBehaviour
     [SerializeField] private Transform gummingsRef;
     [SerializeField] private Transform exitsRef;
 
-    public List<Transform> props = new List<Transform>();
+    private List<Transform> props = new List<Transform>();
+    private List<Transform> gummings = new List<Transform>();
+    private List<Transform> exits = new List<Transform>();
 
     private SerializableDataToSave serializedDatas = new SerializableDataToSave();
 
@@ -39,6 +41,8 @@ public class SaveLevel : MonoBehaviour
     private void GetChildrenFromGO()
     {
         props = GetChildren(propsRef);
+        gummings = GetChildren(gummingsRef);
+        exits = GetChildren(exitsRef);
     }
 
     private List<Transform> GetChildren(Transform goRef)
@@ -54,43 +58,42 @@ public class SaveLevel : MonoBehaviour
 
     private void SaveToJson()
     {
-        serializedDatas.propsDataList = ConvertGOListToEditorDataList<PropsData>(props);
+        SerializeDatas();        
 
         var stringJS = JsonUtility.ToJson(serializedDatas);
-
-        /*var propsJS = new System.Text.StringBuilder();
-
-        foreach(PropsData prop in propsDataList)
-        {
-            propsJS.AppendLine(JsonUtility.ToJson(prop));
-        }*/
-
         string filePath = Application.persistentDataPath + "/" + levelName + ".json";
-        Debug.Log(filePath);
+        //Debug.Log(filePath);
 
         System.IO.File.WriteAllText(filePath, stringJS);
     }
 
-    private List<T> ConvertGOListToEditorDataList<T>(List<Transform> inputList) where T: EditorData
+    private void SerializeDatas()
+    {
+        serializedDatas.propsDataList = ConvertGOListToEditorDataList<PropsData>(props);
+        serializedDatas.gummingsDataList = ConvertGOListToEditorDataList<GummingsData>(gummings);
+        serializedDatas.exitsDataList = ConvertGOListToEditorDataList<EditorData>(exits);
+    }
+
+    private List<T> ConvertGOListToEditorDataList<T>(List<Transform> inputList) where T: EditorData, new()
     {
         List<T> targetList = new List<T>();
 
         foreach (Transform go in inputList)
         {
-            //T targetObject = typeof(T).GetMethod("ConvertGOToEditorData").Invoke(null, new object[] { go }) as T;
-            //targetList.Add(targetObject);
-            targetList.Add(EditorData.ConvertGOToEditorData<T>(go));
+            T targetObject = EditorData.ConvertGOToEditorData<T>(go);
+            targetList.Add(targetObject);
         }
 
         return targetList;
     }
-    
 }
 
 [System.Serializable]
 public struct SerializableDataToSave
 {
     public List<PropsData> propsDataList;
+    public List<GummingsData> gummingsDataList;
+    public List<EditorData> exitsDataList;
 }
 
 
